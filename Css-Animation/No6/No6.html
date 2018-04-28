@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利用 CSS animation 制作一个炫酷的 Slider</title>
+</head>
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .show {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+
+    }
+
+    .chooseImg {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .choose {
+        width: 250px;
+        height: 150px;
+        opacity: 0.5;
+        margin-left: 5px;
+    }
+
+    .chooseImg img:active {
+        cursor: pointer;
+    }
+
+    .chooseImg img:hover {
+        opacity: 1;
+    }
+
+    .choose1 {
+        z-index: 0;
+        animation: mymove1 0.5s ease-out;
+    }
+
+    .choose2 {
+        z-index: 0;
+        animation: mymove2 0.5s ease-out;
+    }
+
+    .choose3 {
+        z-index: 0;
+        animation: mymove3 1s ease-in;
+    }
+
+    .choose4 {
+        z-index: 0;
+        animation: mymove4 1s ease-out;
+    }
+
+    .choose5 {
+        z-index: 0;
+        animation: mymove5 0.7s ease-in-out;
+    }
+
+    @keyframes mymove1 {
+        from {
+            left: -500px;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    @keyframes mymove2 {
+        from {
+            top: 350px;
+        }
+        to {
+            top: 0;
+        }
+    }
+
+    @keyframes mymove3 {
+        from {
+            transform: scale(0.1);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes mymove4 {
+        from {
+            transform: scale(2);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes mymove5 {
+        from {
+            transform: rotateZ(-360deg) scale(0.1);
+        }
+        to {
+            transform: rotateZ(0deg) scale(1);
+        }
+    }
+</style>
+
+<body>
+    <div class="showImg">
+        <img src="img/pic1.jpg" alt="pic1" class="show">
+        <img src="img/pic2.jpg" alt="pic2" class="show">
+        <img src="img/pic3.jpg" alt="pic3" class="show">
+        <img src="img/pic4.jpg" alt="pic4" class="show">
+        <img src="img/pic5.jpg" alt="pic5" class="show">
+    </div>
+    <div class="chooseImg">
+        <img src="img/pic1.jpg" alt="pic1" class="choose">
+        <img src="img/pic2.jpg" alt="pic2" class="choose">
+        <img src="img/pic3.jpg" alt="pic3" class="choose">
+        <img src="img/pic4.jpg" alt="pic4" class="choose">
+        <img src="img/pic5.jpg" alt="pic5" class="choose">
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        var show = document.getElementsByClassName("showImg")[0].getElementsByClassName("show");
+        var choose = document.getElementsByClassName("chooseImg")[0].getElementsByClassName("choose");
+
+        for (var i = 0; i < show.length; i++) {
+            (function () {
+                var temp = i;
+                choose[temp].onclick = function () {
+                    for (var j = 0; j < show.length; j++) {
+                        show[j].setAttribute('class', 'show');
+                    }                  
+                    show[temp].setAttribute('class', 'show choose' + (temp + 1));
+                }
+            })();
+
+        }
+
+    };
+</script>
+
+</html>
