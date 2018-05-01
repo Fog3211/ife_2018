@@ -7,7 +7,7 @@
 CSS-Animation  
 
 
- <font size=6>MVVM</font>  
+MVVM
 
  Front-End  
 [第二天：给自己做一个在线简历吧](https://fog3211.github.io/ife_2018/Front-end/No2.html)  
