@@ -13,6 +13,9 @@
    
  <h3>Front-End</h3>  
  
- - [第二天：给自己做一个在线简历吧](https://fog3211.github.io/ife_2018/Front-end/No2.html)  
+- [第一天：为什么有那么多人要做前端](https://github.com/fog3211/ife_2018)  
+- [第二天：给自己做一个在线简历吧](https://fog3211.github.io/ife_2018/Front-end/No2.html)  
 - [第三天：让简历有点色彩](https://fog3211.github.io/ife_2018/Front-end/No3.html)  
 - [第四天，背景边框列表链接和更复杂的选择器](https://fog3211.github.io/ife_2018/Front-end/No4.html)  
+- [第五天和第六天：三种简历](https://fog3211.github.io/ife_2018/Front-end/No5~6/resume.html)  
+- [第七天到第八天：学习布局](https://fog3211.github.io/ife_2018/Front-end/No7~8/index.html)  
