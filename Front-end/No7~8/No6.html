@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习布局</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        height:300px;
+        background-color: #16af31;
+    }
+
+    .logo {
+        position: absolute;
+        width: 960px;
+        height: 199px;
+        border: 1px solid #ccc;
+        margin-left: 430px;
+        top: 100px;
+    }
+
+    .tab1,
+    .tab2,
+    .tab3,
+    .tab4 {
+        position: absolute;
+        width: 30px;
+        height: 35px;
+        background-color: yellow;
+        margin-left: 10px;
+        bottom: 0;
+    }
+
+    .tab1 {
+        height: 40px;
+    }
+
+    .tab2 {
+        height: 60px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: grey;
+        text-align: center;
+        line-height: 60px;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .banner {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .banner .nav {
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .banner .nav ul {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .banner .nav ul li {
+        list-style: none;
+        float: left;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 20px 20px 0 0;
+        border-bottom: none;
+    }
+
+    .banner .nav ul li:active {
+        background-color: #ccc;
+    }
+
+    .main {
+        position: relative;
+        width: 960px;
+        margin: 10px auto 0 auto;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        text-align: center;
+        line-height: 200px;
+    }
+
+
+    .main div:nth-of-type(1),
+    .main div:nth-of-type(2),
+    .main div:nth-of-type(3),
+    .main div:nth-of-type(8),
+    .main div:nth-of-type(9),
+    .main div:nth-of-type(10) {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ccc;
+        float: left;
+        margin: 0 9px 0 9px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .main div:nth-of-type(4),
+    .main div:nth-of-type(5),
+    .main div:nth-of-type(6),
+    .main div:nth-of-type(7) {
+        width: 225px;
+        height: 200px;
+        border: 1px solid #ccc;
+        float: left;
+        margin: 0 6px 0 6px;
+        margin-top: 20px;
+    }
+
+    .demo1,
+    .demo2,
+    .demo3,
+    .demo4 {
+        margin-right: 10px;
+        float: right;
+        width: 30px;
+        height: 50px;
+        background-color: #c9fc8b;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .demo1 {
+        margin-top: 150px;
+        height: 40px;
+    }
+
+    .demo2 {
+        background-color: #dbfdb0;
+        margin-top: 140px;
+        height: 50px;
+    }
+
+    .demo3 {
+        margin-top: 150px;
+        height: 40px;
+    }
+
+    .demo4 {
+        margin-top: 150px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="" alt="">
+                <div class="demo4">4</div>
+                <div class="demo3">3</div>
+                <div class="demo2">2</div>
+                <div class="demo1">1</div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <div>This is Content1</div>
+                <div>This is Content2</div>
+                <div>This is Content3</div>
+                <div>This is Content4</div>
+                <div>This is Content5</div>
+                <div>This is Content6</div>
+                <div>This is Content7</div>
+                <div>This is Content8</div>
+                <div>This is Content9</div>
+                <div>This is Content10</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            2018 ife.baidu.com
+        </div>
+    </div>
+</body>
+
+</html>
