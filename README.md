@@ -12,7 +12,7 @@
 - [No.4 - 3D 空间的卡片翻转动效](https://fog3211.github.io/ife_2018/Css-Animation/No4/No4.html)  
 - [No.5 - 纯 CSS 制作绕中轴旋转的立方体](https://fog3211.github.io/ife_2018/Css-Animation/No5.html)  
 - [No.6 - 利用 CSS animation 制作一个炫酷的 Slider](https://fog3211.github.io/ife_2018/Css-Animation/No6/No6.html)  
-
+- [No.7 - 使用 animate.css 实现一个优雅的登录框](https://fog3211.github.io/ife_2018/Css-Animation/No7/No7.html) 
 
 <h3>MVVM</h3>  
 
