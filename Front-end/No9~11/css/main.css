@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container .part1 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('../img/bg1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.container .part1 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('../img/bg1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.container .part1 h1 {
+    position: relative;
+    font-size: 62px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: lighter;
+    top: 200px;
+}
+
+.container .part1 .description {
+    position: relative;
+    width: 785px;
+    height: 88px;
+    color: #ffffff;
+    margin: 0 auto;
+    top: 300px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.container .part1 .login {
+    position: relative;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #c0c0c0;
+    top: 400px;
+}
+
+.container .part1 .cre,
+.container .part1 .abs {
+    position: relative;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    top: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 34px;
+}
+
+.container .part1 .abs {
+    font-size: 14px;
+}
+
+.container .part1 input[type="email"],
+.container .part1 input[type="passward"] {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 125px;
+    left: 180px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center
+}
+
+.container .part1 input[type="passward"] {
+    top: 123px;
+    left: 580px;
+}
+
+.container .part1 button {
+    position: absolute;
+    width: 128px;
+    height: 54px;
+    right: 100px;
+    top: 120px;
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    line-height: 54px;
+}
+
+.container .part2 {
+    position: relative;
+    width: 100%;
+    height: 810px;
+}
+
+.container .part2 .boa,
+.container .part2 .rea {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.container .part2 .rea {
+    width: 700px;
+    font-size: 40px;
+    top: 80px;
+    font-weight: lighter;
+}
+
+.container .part2 .box-list {
+    position: relative;
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+    top: 80px;
+}
+
+.container .part2 .list1,
+.container .part2 .list2,
+.container .part2 .list3,
+.container .part2 .list4 {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 150px;
+    top: 40px;
+}
+
+.container .part2 .list2 {
+    left: 750px;
+}
+
+.container .part2 .list3 {
+    top: 280px;
+}
+
+.container .part2 .list4 {
+    top: 280px;
+    left: 750px;
+}
+
+.container .part2 .list1 .description,
+.container .part2 .list2 .description,
+.container .part2 .list3 .description,
+.container .part2 .list4 .description {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    left: 100px;
+}
+
+.container .part2 .list1 .description h3,
+.container .part2 .list2 .description h3,
+.container .part2 .list3 .description h3,
+.container .part2 .list4 .description h3 {
+    position: relative;
+    top: 35px;
+}
+
+.container .part2 .list1 .description .description-d,
+.container .part2 .list2 .description .description-d,
+.container .part2 .list3 .description .description-d,
+.container .part2 .list4 .description .description-d {
+    position: relative;
+    font-weight: lighter;
+    color: #5f5f5f;
+    top: 70px;
+    line-height: 24px;
+}
+
+.container .part2 .list1::before,
+.container .part2 .list2::before,
+.container .part2 .list3::before,
+.container .part2 .list4::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 80px;
+    height: 100px;
+    top: 40px;
+    background-position: 0 0;
+    background: url("../img/icon1.png");
+}
+
+.container .part2 .list2::before {
+    height: 80px;
+    background-position: -120px 0;
+}
+
+.container .part2 .list3::before {
+    height: 80px;
+    background-position: -240px 0;
+}
+
+.container .part2 .list4::before {
+    top: 60px;
+    height: 80px;
+    background-position: -340px 0;
+}
+
+.container .part3 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('../img/bg2.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.container .part3 .product {
+    position: relative;
+    width: 40%;
+    height: 1000px;
+    font-weight: lighter;
+    font-size: 20px;
+    float: left;
+}
+
+.container .part3 .product h1 {
+    position: relative;
+    color: #ffffff;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: lighter;
+    top: 180px;
+}
+
+.container .part3 .product .description {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    width: 400px;
+    top: 220px;
+}
+
+.container .part3 .product a {
+    text-decoration: none;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    padding: 15px 20px;
+    top: 350px;
+    left: 150px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.container .part3 .product .try {
+    margin-left: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+.container .part3 .wrap {
+    position: relative;
+    float: right;
+    width: 1050px;
+    height: 600px;
+    top: 140px;
+    right: 100px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 40px;
+}
+
+.container .part3 .wrap .means {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    top: 60px;
+    text-align: center;
+}
+
+.container .part3 .wrap .means h1 {
+    position: relative;
+    top: 20px;
+    font-weight: normal;
+}
+
+.container .part3 .wrap .means h3 {
+    position: relative;
+    top: 40px;
+    font-weight: normal;
+}
+
+.container .part3 .wrap .means .data-box {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    top: 80px;
+}
+
+.container .part3 .wrap .means .data-box .data1,
+.container .part3 .wrap .means .data-box .data2,
+.container .part3 .wrap .means .data-box .data3,
+.container .part3 .wrap .means .data-box .data4 {
+    float: left;
+    width: 180px;
+    height: 260px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    color: #7f7f7f;
+    font-size: 14px;
+}
+
+.container .part3 .wrap .means .data-box .data1 h2,
+.container .part3 .wrap .means .data-box .data2 h2,
+.container .part3 .wrap .means .data-box .data3 h2,
+.container .part3 .wrap .means .data-box .data4 h2 {
+    text-align: left;
+    font-weight: normal;
+    margin: 10px 0 10px 0;
+    color: #000000;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.container .part4 {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .part4 h1 {
+    position: relative;
+    text-align: center;
+    font-weight: lighter;
+    top: 100px;
+}
+
+.container .part4 .essay-box {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.container .part4 .essay-box .essay1,
+.container .part4 .essay-box .essay2,
+.container .part4 .essay-box .essay3 {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    top: 140px;
+    left: 100px;
+}
+
+.container .part4 .essay-box .essay2 {
+    left: 475px;
+}
+
+.container .part4 .essay-box .essay3 {
+    left: 850px;
+}
+
+.container .part4 .essay-box .essay1 h2,
+.container .part4 .essay-box .essay2 h2,
+.container .part4 .essay-box .essay3 h2 {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    font-family: STXingkai;
+    font-size: 45px;
+}
+
+.container .part4 .essay-box .essay1 .content,
+.container .part4 .essay-box .essay2 .content,
+.container .part4 .essay-box .essay3 .content {
+    position: relative;
+    font-weight: lighter;
+    color: #5f5f5f;
+    top: 70px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.container .part5 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .part5 .box1,
+.container .part5 .box2 {
+    position: relative;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container .part5 .box1 .pic,
+.container .part5 .box2 .pic {
+    float: left;
+    width: 65%;
+    height: 400px;
+    background: url('../img/bg3.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.container .part5 .box2 .pic {
+    width: 52%;
+    background: url('../img/bg4.png') no-repeat;
+    float: right;
+}
+
+.container .part5 .box1 .font,
+.container .part5 .box2 .font {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: right;
+    text-align: center;
+    top: 100px;
+}
+
+.container .part5 .box2 .font {
+    float: left;
+    left: 100px;
+}
+
+.container .part5 .box1 .font .content,
+.container .part5 .box2 .font .content {
+    position: relative;
+    top: 30px;
+    font-weight: lighter;
+}
+
+.container .part6 {
+    width: 100%;
+    height: 1150px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .part6 h1,
+.container .part6 h3 {
+    text-align: center;
+    position: relative;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+
+.container .part6 h1 {
+    top: 40px;
+    font-size: 40px;
+}
+
+.container .part6 h3 {
+    top: 80px;
+    width: 700px;
+}
+
+.container .part6 .pic-box {
+    position: relative;
+    width: 1030px;
+    height: 920px;
+    margin: 0 auto;
+    top: 110px;
+    overflow: hidden;
+}
+
+.container .part6 .pic-box .pic1,
+.container .part6 .pic-box .pic2,
+.container .part6 .pic-box .pic3,
+.container .part6 .pic-box .pic4 {
+    position: relative;
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin: 30px;
+    background: url('../img/pic1.png') no-repeat;
+    overflow: hidden;
+}
+
+.container .part6 .pic-box .pic2 {
+    background: url('../img/pic2.png') no-repeat;
+}
+
+.container .part6 .pic-box .pic3 {
+    background: url('../img/pic3.png') no-repeat;
+}
+
+.container .part6 .pic-box .pic4 {
+    background: url('../img/pic4.png') no-repeat;
+}
+
+.container .part6 .pic-box .pic1 .cover,
+.container .part6 .pic-box .pic2 .cover,
+.container .part6 .pic-box .pic3 .cover,
+.container .part6 .pic-box .pic4 .cover {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    top: 400px;
+    opacity: 0.5;
+}
+
+.container .part6 .pic-box .pic1:hover>.cover,
+.container .part6 .pic-box .pic2:hover>.cover,
+.container .part6 .pic-box .pic3:hover>.cover,
+.container .part6 .pic-box .pic4:hover>.cover {
+    top: 0;
+}
+
+.container .part7 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .part7 form {
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 750px;
+    border: 1px solid #ccc;
+    left: 300px;
+    top: 100px;
+    text-align: center;
+}
+
+.container .part7 form h2 {
+    position: relative;
+    top: 50px;
+    font-weight: normal;
+}
+
+.container .part7 form input {
+    position: relative;
+    padding: 20px 70px;
+    top: 80px;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.container .part7 form textarea {
+    position: relative;
+    top: 120px;
+    left: 5px;
+    font-size: 26px;
+    padding: 15px 20px;
+    resize: none;
+}
+
+.container .part7 form button {
+    position: relative;
+    padding: 15px 190px;
+    top: 160px;
+    background-color: black;
+    color: white;
+    line-height: 24px;
+}
+
+.container .part7 .contacts {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    float: right;
+    margin-right: 200px;
+    top: 200px;
+}
+
+.container .part7 .contacts h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: lighter;
+    top: 20px;
+    left: 20px;
+}
+
+.container .part7 .contacts h3 {
+    font-weight: lighter;
+    color: #6c6c6c;
+    position: relative;
+    width: 450px;
+    left: 20px;
+    top: 60px;
+}
+
+.container .part7 .contacts .means {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-size: 18px;
+}
+
+.container .part7 .contacts .means .m1,
+.container .part7 .contacts .means .m2,
+.container .part7 .contacts .means .m3 {
+    width: 250px;
+    margin: 40px;
+}
+
+.container .part7 .contacts .means .m1::before,
+.container .part7 .contacts .means .m2::before,
+.container .part7 .contacts .means .m3::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: -20px;
+    top: 5px;
+    background-position: 0 0;
+    background: url("../img/icon2.png");
+}
+
+.container .part7 .contacts .means .m2::before {
+    background-position: -50px 0;
+    top: 85px;
+}
+
+.container .part7 .contacts .means .m3::before {
+    background-position: -90px 0;
+    top: 150px;
+}
+
+.container .part8 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.container .part8 .more,
+.container .part8 .about,
+.container .part8 .support,
+.container .part8 .enjoy {
+    width: 200px;
+    height: 400px;
+    float: left;
+    margin-left: 150px;
+}
+
+.container .part8 .more h2,
+.container .part8 .about h2,
+.container .part8 .support h2,
+.container .part8 .enjoy h2 {
+    position: relative;
+    font-weight: lighter;
+    top: 80px;
+}
+
+.container .part8 .more a,
+.container .part8 .about a,
+.container .part8 .support a,
+.container .part8 .enjoy h3 {
+    display: block;
+    position: relative;
+    top: 120px;
+    margin-top: 20px;
+    font-weight: lighter;
+    color: #848484;
+    text-decoration: none;
+}
+
+.container .part8 .enjoy {
+    width: 400px;
+}
+
+.container .part8 .enjoy h3 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container .part8 .enjoy .link {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    top: 150px;
+    margin: 0 auto;
+}
+
+.container .part8 .enjoy .link a {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 15px;
+    top: 20px;
+    left: 10px;
+    background-position: 0 0;
+    background: url("../img/icon3.png");
+}
+
+.container .part8 .enjoy .link .l2 {
+    width: 10px;
+    height: 20px;
+    top: 15px;
+    background-position: -30px 0;
+    margin-left: 40px;
+}
+
+.container .part8 .enjoy .link .l3 {
+    width: 25px;
+    height: 15px;
+    background-position: -50px 0;
+    margin-left: 70px;
+}
+
+.container .part8 .enjoy .link .l4 {
+    width: 10px;
+    height: 15px;
+    background-position: -80px 0;
+    margin-left: 110px;
+}
+
+.container .part8 .enjoy .link .l5 {
+    width: 15px;
+    height: 15px;
+    background-position: -100px 0;
+    margin-left: 140px;
+}
+
+.container .part8 .enjoy .link .l6 {
+    width: 15px;
+    height: 15px;
+    background-position: -120px 0;
+    margin-left: 170px;
+}
