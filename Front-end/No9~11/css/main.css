@@ -486,50 +486,65 @@
     overflow: hidden;
 }
 
-.container .part6 .pic-box .pic1,
-.container .part6 .pic-box .pic2,
-.container .part6 .pic-box .pic3,
-.container .part6 .pic-box .pic4 {
-    position: relative;
-    width: 450px;
-    height: 400px;
+.container .part6 .pic-box .list {
     float: left;
-    margin: 30px;
-    background: url('../img/pic1.png') no-repeat;
-    overflow: hidden;
 }
 
-.container .part6 .pic-box .pic2 {
-    background: url('../img/pic2.png') no-repeat;
+.container .part6 .pic-box .list img {
+    width: 400px;
+    height: 400px;
+    margin: 25px;
+    float: left;
 }
 
-.container .part6 .pic-box .pic3 {
-    background: url('../img/pic3.png') no-repeat;
+.container .part6 .pic-box .list .item-main {
+    position: absolute;
+    float: left;
+    width: 400px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, .65);
+    opacity: 0;
 }
 
-.container .part6 .pic-box .pic4 {
-    background: url('../img/pic4.png') no-repeat;
+.container .part6 .pic-box .list .item-main:hover {
+    opacity: 1;
 }
 
-.container .part6 .pic-box .pic1 .cover,
-.container .part6 .pic-box .pic2 .cover,
-.container .part6 .pic-box .pic3 .cover,
-.container .part6 .pic-box .pic4 .cover {
-    position: relative;
-    width: 100%;
-    height: 80%;
-    background-color: black;
-    top: 400px;
-    opacity: 0.5;
+.container .part6 .pic-box .list .item-main h2 {
+    margin-top: 85px;
+    font-size: 20px;
+    font-weight: normal;
 }
 
-.container .part6 .pic-box .pic1:hover>.cover,
-.container .part6 .pic-box .pic2:hover>.cover,
-.container .part6 .pic-box .pic3:hover>.cover,
-.container .part6 .pic-box .pic4:hover>.cover {
-    top: 0;
+.container .part6 .pic-box .list .item-main h5 {
+    color: #6f6f6f;
+    margin-top: 20px;
 }
 
+.container .part6 .pic-box .list .item-main .icon1,
+.container .part6 .pic-box .list .item-main .icon2,
+.container .part6 .pic-box .list .item-main .icon3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius:50%; 
+    background: url('../img/icon5.gif') no-repeat;
+    background-position: 0 0;
+    top:200px;
+    left:100px;
+}
+.container .part6 .pic-box .list .item-main .icon2{
+    background: url('../img/icon6.gif') no-repeat;
+    left:165px;
+}
+.container .part6 .pic-box .list .item-main .icon3{
+    background: url('../img/icon7.gif') no-repeat;
+    left:230px;
+}
 .container .part7 {
     width: 100%;
     height: 900px;
