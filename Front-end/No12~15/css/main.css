@@ -266,7 +266,7 @@
 .goals .line::after{
     content: '';
     position: absolute;
-    width: 194px;
+    width: 184px;
     margin-left: -105px;
     margin-top: 40px;
     border: 1px solid #4C5769;
