@@ -7,15 +7,14 @@
 
 .container {
     width: 100%;
-    height: 100%;
+    height: 989px;
 }
 
 .nav-left {
     position: absolute;
     width: 102px;
-    height: 100%;
     background-color: #1D2531;
-    overflow: hidden;
+    height: 989px;
 }
 
 .nav-header {
@@ -103,7 +102,7 @@
 .nav-middle {
     position: absolute;
     width: 254px;
-    height: 100%;
+    height: 989px;
     background-color: #222C3C;
     margin-left: 102px;
 }
@@ -171,6 +170,7 @@
     margin-top: 60px;
     border: 1px solid #4C5769;
 }
+
 .nav-middle .products {
     color: #4C5769;
     font-weight: bold;
@@ -231,9 +231,11 @@
     width: 16px;
     background-position: -30px -30px;
 }
-.products-list li:last-child::after{
+
+.products-list li:last-child::after {
     margin-left: -130px;
 }
+
 .dashboard p {
     top: 530px;
 }
@@ -251,9 +253,9 @@
 }
 
 .goals {
-    position: fixed;
+    position: absolute;
     width: 254px;
-    bottom: 50px;
+    bottom: 5rem;
     color: #7B8593;
     font-weight: bold;
     font-size: 14px;
@@ -262,17 +264,289 @@
 .goals span {
     margin-left: 15px;
 }
+
 .goals .line::before,
-.goals .line::after{
+.goals .line::after {
     content: '';
     position: absolute;
-    width: 184px;
-    margin-left: -105px;
+    width: 194px;
+    margin-left: -120px;
     margin-top: 40px;
     border: 1px solid #4C5769;
 }
-.goals .line::after{
+
+.goals .line::after {
     width: 42px;
-    border:1px solid #886BE5;
-    margin-left: -205px;
+    border: 1px solid #886BE5;
+    margin-left: -80%;
+}
+
+.main-content {
+    width: 1490px;
+    margin-left: 356px;
+    background-color: #ffffff;
+    height: 989px;
+    color: #000000;
+}
+
+.main-content .messages {
+    position: relative;
+    width: 100%;
+}
+
+.messages span {
+    position: relative;
+    width: 100%;
+    top: 20px;
+    left: 20px;
+    font-size: 24px
+}
+
+.main-content .messages {
+    height: 80px;
+    border-bottom: 2px solid#E6E9EC;
+}
+
+.main-content .person {
+    position: fixed;
+    height: 58px;
+    right: 40px;
+    top: 10px;
+}
+
+.person .p-box {
+    float: right;
+    color: #2399F1;
+    font-weight: bold;
+}
+
+.person p {
+    margin: 5px 0 0 10px;
+}
+
+.person .p2 {
+    color: #d3d3d3;
+    font-weight: normal;
+}
+
+.person .p2::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/icon2.png);
+    background-position: 0 -20px;
+    right: -20px;
+    top: 25px;
+}
+
+.content-left {
+    width: 402px;
+    height: 907px;
+    float: left;
+}
+
+.content-left input {
+    width: 350px;
+    border: 1px solid#E6E9EC;
+    border-top: none;
+    font-size: 18px;
+    padding: 20px 0 20px 50px;
+}
+
+.content-left ul li {
+    position: relative;
+    height: 118px;
+    border: 1px solid#E6E9EC;
+}
+
+.content-left a {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icon2.png);
+    background-position: -50px 0;
+    margin: -35px 0 0 340px;
+    cursor: pointer;
+}
+
+.person-list img {
+    float: left;
+    margin: 5px 0 0 10px;
+}
+
+.content-left .person-list .p-box {
+    float: left;
+    color: #585D68;
+    font-weight: bold;
+    margin: 15px 0 0 10px;
+}
+
+.person-list .mark-p {
+    color: #2399F1;
+}
+
+.person-list .p2 {
+    color: #d3d3d3;
+    font-weight: normal;
+}
+
+.person-list span {
+    float: right;
+    margin: 25px 20px 0 0;
+    color: #8896AA;
+}
+
+.clear {
+    overflow: hidden;
+}
+
+.person-list>p {
+    font-size: 14px;
+    margin: 5px 0 0 10px;
+    color: #636872;
+}
+
+.clear .mark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2298F1;
+    color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 90px;
+    right: 2px;
+    position: absolute;
+}
+
+.person-list .left {
+    width: 348px;
+}
+
+.content-right {
+    height: 907px;
+}
+
+.content-right .menu {
+    height: 61px;
+    border: 1px solid#E6E9EC;
+}
+
+.content-right .menu span {
+    color: #565D68;
+    line-height: 61px;
+    margin-left: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+.content-right .menu .icon {
+    float: left;
+    padding-left: 650px;
+    height: 50px;
+}
+
+.menu .icon a {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icon2.png);
+    background-position: -20px -20px;
+    margin: 25px 15px 0 0;
+}
+
+.menu .name::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #96DFA2;
+    margin: 30px 0 0 15px;
+}
+
+.menu .icon .line::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-image: url(../img/icon2.png);
+    background-position: -80px -15px;
+    left: 10px;
+    top: -5px;
+    margin: 0 15px;
+}
+
+.menu .icon .icon2 {
+    background-position: -40px -20px;
+}
+
+.menu .icon .icon3 {
+    background-position: -60px -20px;
+}
+
+.content-right .menu .date {
+    color: #56688A;
+}
+
+.menu .icon .icon4,
+.menu .icon .icon5 {
+    width: 6px;
+    height: 10px;
+    background-position: 0 -40px;
+}
+
+.menu .icon .icon5 {
+    background-position: -20px -40px;
+}
+
+.content-right .menu .icon-tab {
+    padding-left: 0px;
+    float: left;
+    margin-left: 20px;
+}
+
+.menu .icon-tab .line::after {
+    margin-left: 5px;
+}
+
+.person-list .clear .p-box .p1,
+.person-list .clear .p-box .p3 {
+    color: #585D68;
+    display: inline-block;
+}
+
+.person-list .clear .p-box .p3 {
+    font-weight: lighter;
+    margin-left: 10px;
+}
+.content-right .person-list .clear .p-box{
+    color: #585D68;
+    font-weight: bold;
+    margin: 15px 0 0 10px;
+}
+.p4{
+    color:#b1b389;
+}
+.comment .weekday{
+    text-align: center;
+    margin-top:10px; 
+    color:#7bc2f7;
+}
+.comment .weekday::before,
+.comment .weekday::after{
+    content: '';
+    position: absolute;
+    width: 480px;
+    height: 2px;
+    background-color:#7bc2f7;
+    /* margin: -35px 0 0 340px; */
+    left: 760px;
+    margin-top:10px;
+}
+.comment .weekday::after{
+    left: auto;
+    right: 0;
 }
