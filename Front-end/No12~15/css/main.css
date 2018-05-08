@@ -542,11 +542,30 @@
     width: 480px;
     height: 2px;
     background-color:#7bc2f7;
-    /* margin: -35px 0 0 340px; */
     left: 760px;
     margin-top:10px;
 }
 .comment .weekday::after{
     left: auto;
     right: 0;
+}
+.p5{
+  text-align: center;
+  margin-top:40px;
+  color: #585D68;
+}
+.p5::before{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/icon2.png);
+    background-position: -75px 0;
+    left: 820px;
+    margin-top:5px;
+}
+.img-box{
+    height: 100px;
+    display: block;
+    margin: 10px 0 20px 450px;
 }
