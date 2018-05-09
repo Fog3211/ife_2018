@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="cal(1)">加</button>
+    <button id="minus-btn" onclick="cal(2)">减</button>
+    <button id="times-btn" onclick="cal(3)">乘</button>
+    <button id="divide-btn" onclick="cal(4)">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        function cal(n) {
+            var input = document.getElementsByTagName("input");
+            var num1 = parseInt(input[0].value);
+            var num2 = parseInt(input[1].value);
+            var result = 0;
+            var p = document.getElementById("result");
+            if (n == '1') {
+                p.innerHTML = "运算结果:  " + (num1 + num2);
+            } else if (n == '2') {
+                p.innerHTML = "运算结果:  " + (num1 - num2);
+
+            } else if (n == '3') {
+                p.innerHTML = "运算结果:  " + (num1 * num2);
+
+            } else {
+                if (num2 == 0) {
+                    alert("Error!");
+                } else {
+                    p.innerHTML = "运算结果:  " + (num1 / num2);
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

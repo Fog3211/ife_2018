@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <span>运算结果:</span>
+    <p id="result"></p>
+    <script>
+        var p = document.getElementById("result");
+        var cnt = 0;
+        var result;
+        for (var i = 1; i < 10; i++) {
+            for (var j = 1; j <= i; j++) {
+                result = i * j;
+                cnt++;
+                document.write(result + " = " + i + "*" + j + " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

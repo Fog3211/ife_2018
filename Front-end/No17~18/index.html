@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<style>
+    a{
+        font-size: 40px;
+    }
+</style>
+    <a href="demo1.html">练习1</a>
+    <a href="demo2.html">练习2</a>  
+    <a href="demo3.html">练习3</a>  
+    <a href="demo4.html">练习4</a>
+<body>
+    <script>
+        var tdate=new Date();
+        var thour=tdate.getHours();
+        if(thour<12)
+        alert("Good Morning!");
+        else if(thour>=12&&thour<18){
+        alert("Good Afternoon!");
+        }
+        else{
+        alert("Good Night!");            
+        }
+    </script>
+</body>
+
+</html>
