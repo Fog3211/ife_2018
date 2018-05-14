@@ -1,0 +1,36 @@
+.test {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.test4 {
+    height: 350px;
+}
+
+select {
+    display: none;
+}
+
+.palette {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.palette li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    cursor: pointer;
+    float: left;
+}
+
+#smile{
+    width: 480px;
+    height: 480px;
+    background-image: url(../img/smile.jpg);
+    background-position: 0 0;
+}

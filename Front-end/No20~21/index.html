@@ -5,34 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        .test {
-            width: 300px;
-            height: 200px;
-            border: 1px solid black;
-            margin-top: 20px;
-        }
-
-        select {
-            display: none;
-        }
-
-        .palette {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            overflow: hidden;
-        }
-
-        .palette li {
-            width: 40px;
-            height: 40px;
-            border: 1px solid #000;
-            cursor: pointer;
-            float: left;
-        }
-    </style>
+    <title>让你和页面对话</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -79,22 +53,23 @@
 
 
     </div>
+    <div class="test test4">
+        <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+        <button id="fade-btn">淡出</button>
+    </div>
 
 
-    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
-    <button id="fade-btn">淡出</button>
 
+    <div class="test5">
+        <div id="smile"></div>
+    </div>
 
-    <!-- 点击按钮时，开始改变 fade-obj 的透明度，开始一个淡出（逐渐消失）动画，直到透明度为0
-在动画过程中，按钮的状态变为不可点击
-在动画结束后，按钮状态恢复，且文字变成“淡入”
-在 按钮显示 淡入 的状态时，点击按钮，开始一个“淡入”（逐渐出现）的动画，和上面类似按钮不可点，直到透明度完全不透明
-淡入动画结束后，按钮文字变为“淡出” -->
 
     <script src="js/test1.js"></script>
     <script src="js/test2.js"></script>
     <script src="js/test3.js"></script>
     <script src="js/test4.js"></script>
+    <script src="js/test5.js"></script>
 </body>
 
 </html>
