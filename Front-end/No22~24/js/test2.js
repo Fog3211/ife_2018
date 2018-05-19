@@ -52,27 +52,37 @@ btn[4].onclick = function () {
 btn[5].onclick = function () {
     var num_a = document.getElementById("num-a").value;
     var num_b = document.getElementById("num-b").value;
-    var length_a = str_a.value.length;
-    var length_b = str_b.value.length;
     if (radio_a.checked) {
-            p.innerHTML = str_a.value.slice(num_a, num_b);
-        
+        p.innerHTML = str_a.value.slice(num_a, num_b);
     } else if (radio_b.checked) {
-            p.innerHTML = str_b.value.slice(num_a, num_b);
+        p.innerHTML = str_b.value.slice(num_a, num_b);
     }
 }
 // 当前选中输入框的行数
 btn[6].onclick = function () {
- 
+    if (radio_a.checked) {
+        // 可视区高度/默认字体大小
+        var input_a_Height=str_a.offsetHeight;
+        p.innerHTML = Math.ceil(input_a_Height/ 12);
+    } else if (radio_b.checked) {
+        var input_b_Height=str_b.offsetHeight;
+        p.innerHTML = Math.ceil(input_b_Height/ 12);
+    }
 }
 // 使用substr获取选中输入框内容的子字符串，参数为num-a及num-b
 btn[7].onclick = function () {
-    p.innerHTML = str_a.style.row;
+    var num_a = document.getElementById("num-a").value;
+    var num_b = document.getElementById("num-b").value;
+    if (radio_a.checked) {
+        p.innerHTML = str_a.value.substr(num_a, num_b);
+    } else if (radio_b.checked) {
+        p.innerHTML = str_b.value.substr(num_a, num_b);
+    }
 }
 // 把所选输入框中的内容全部转为大写
 btn[8].onclick = function () {
     if (radio_a.checked) {
-            p.innerHTML = str_a.value.toUpperCase();
+        p.innerHTML = str_a.value.toUpperCase();
     } else if (radio_b.checked) {
         p.innerHTML = str_b.value.toUpperCase();
     }
@@ -80,20 +90,39 @@ btn[8].onclick = function () {
 // 把所选输入框中的内容全部转为小写
 btn[9].onclick = function () {
     if (radio_a.checked) {
-            p.innerHTML = str_a.value.toLowerCase();
+        p.innerHTML = str_a.value.toLowerCase();
     } else if (radio_b.checked) {
         p.innerHTML = str_b.value.toLowerCase();
     }
 }
 // 把所选输入框中内容的半角空格全部去除
 btn[10].onclick = function () {
-
+    if (radio_a.checked) {
+        p.innerHTML = clearspace(str_a);
+    } else if (radio_b.checked) {
+        p.innerHTML = clearspace(str_b);
+    }
 }
 // 把所选输入框中内容的a全部替换成另外一个输入框中的内容
 btn[11].onclick = function () {
     if (radio_a.checked) {
-        str_a.value= str_b.value;
+        str_a.value = str_b.value;
     } else if (radio_b.checked) {
-        str_b.value= str_a.value;
+        str_b.value = str_a.value;
     }
+}
+// 去除空格函数
+function clearspace(str_a) {
+    var arr = str_a.value.split('');
+    var str = '';
+    var newarr = [];
+    for (var i = 0; i < str_a.value.length; i++) {
+        if (arr[i] != ' ') {
+            newarr.push(arr[i]);
+        } else {
+            continue;
+        }
+    }
+    str = newarr.join('');
+    return str;
 }
