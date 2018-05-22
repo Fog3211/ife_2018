@@ -73,6 +73,10 @@ function type1(arr) {
 // 格式2
 function type2(arr) {
     var str = '';
+   if (ampm(arr[4])=="AM"){
+    arr[4]-=12;
+    arr[4]=addDigit(arr[4]);
+   }
     str = arr[0] + '-' + arr[1] + '-' + arr[2] + ' '  + changeweek2(1.0*arr[3]) + ' ' + arr[4] + ':' + arr[5] + ':' + arr[6]+' '+ampm(arr[4]);
     return str;
 }
