@@ -1,8 +1,12 @@
-// 输入框中没有任何输入内容->无提示框
-// 输入框中输入了很多半角或者全角的空格->无提示框
-// 输入框中输入了"abc"->出现提示框，提示框中的内容为abc开头，后面跟着@163.com，@gmail.com等一系列的提示
-// 输入框中输入了" abc "->出现提示框，提示框中的内容为abc开头，后面跟着@163.com，@gmail.com等一系列的提示
-// 输入框中先输入"abc"，然后再全部删掉->输入abc时出现提示框，全部删除后提示框消失
+
+    // 输入a@1->出现提示框，提示a@163.com, a@126.com
+    // 输入a@g->出现提示框，提示a@gmail.com
+    // 输入a@2->出现提示框，提示a@263.net
+    // 输入a@qq->出现提示框，提示a@qq.com
+    // 输入a@163.->出现提示框，提示a@163.com
+    // 输入a@126.com->出现提示框，提示a@126.com
+    // 输入a@qq.com （两个空格）->出现提示框，提示a@qq.com
+    // 输入a@qq.comm->出现提示框，出现全部提示
 
 var inputDom = document.getElementById("email-input");
 var ulDom = document.getElementById("email-sug-wrapper");
@@ -13,13 +17,19 @@ inputDom.oninput = function () {
         var liValues = createHint(userInput);
         addHint(liValues);
     } else {
-        hideHint();
+        ulDom.innerHTML = '';
     }
 }
 // 生成提示框中的提示内容
 function createHint(str) {
     var postfixList = ['163.com', 'gmail.com', '126.com', 'qq.com', '263.net'];
-    for (i = 0; i < postfixList.length; i++) {
+    for (var i = 0; i < postfixList.length; i++) {
+        for (var j = 0; j < str.length; j++) {
+            if (str[j] == '@') {
+                str = str.slice(0, j);
+                break;
+            }
+        }
         postfixList[i] = str + '@' + postfixList[i];
     }
     return postfixList;
@@ -41,6 +51,7 @@ function getInput() {
 }
 
 function hideHint() {
+    // ulDom.style.display = "hidden";
     ulDom.innerHTML = '';
 }
 
