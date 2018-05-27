@@ -3,20 +3,6 @@
 ![百度前端技术学院](http://ife.baidu.com/2018/asset/common/img/logo_a3b4064.png)
 
 
-
-<h3>CSS-Animation</h3>  
-
-- [No.1 - 制作一个简单的菜单动画效果](https://fog3211.github.io/ife_2018/Css-Animation/No1.html)  
-- [No.2 - 初步接触 CSS 2D 变形](https://fog3211.github.io/ife_2018/Css-Animation/No2.html)  
-- [No.3 - CSS transition 和 CSS transform 配合制作动画](https://fog3211.github.io/ife_2018/Css-Animation/No3/No3.html)  
-- [No.4 - 3D 空间的卡片翻转动效](https://fog3211.github.io/ife_2018/Css-Animation/No4/No4.html)  
-- [No.5 - 纯 CSS 制作绕中轴旋转的立方体](https://fog3211.github.io/ife_2018/Css-Animation/No5.html)  
-- [No.6 - 利用 CSS animation 制作一个炫酷的 Slider](https://fog3211.github.io/ife_2018/Css-Animation/No6/No6.html)  
-- [No.7 - 使用 animate.css 实现一个优雅的登录框](https://fog3211.github.io/ife_2018/Css-Animation/No7/No7.html) 
-- [No.8 - 把 AE 动画转换成 Web 原生动画](https://fog3211.github.io/ife_2018/Css-Animation/No8/No8.html) 
-<h3>MVVM</h3>  
-
-   
  <h3>Front-End</h3>  
  
 - [第一天：为什么有那么多人要做前端](https://github.com/fog3211/ife_2018)  
@@ -34,3 +20,20 @@
 - [第二十二天到第二十四天：JavaScript里面的居民们](https://fog3211.github.io/ife_2018/Front-end/No22~24/index.html)  
 - [第二十五天到第二十七天 倒数开始 滴答滴 滴答滴](https://fog3211.github.io/ife_2018/Front-end/No25~27/index.html)  
 - [第二十八天到第三十天 给爱的人发个邮件吧](https://fog3211.github.io/ife_2018/Front-end/No28~30/index.html)  
+
+<h3>MVVM</h3>  
+
+
+<h3>CSS-Animation</h3>  
+
+- [No.1 - 制作一个简单的菜单动画效果](https://fog3211.github.io/ife_2018/Css-Animation/No1.html)  
+- [No.2 - 初步接触 CSS 2D 变形](https://fog3211.github.io/ife_2018/Css-Animation/No2.html)  
+- [No.3 - CSS transition 和 CSS transform 配合制作动画](https://fog3211.github.io/ife_2018/Css-Animation/No3/No3.html)  
+- [No.4 - 3D 空间的卡片翻转动效](https://fog3211.github.io/ife_2018/Css-Animation/No4/No4.html)  
+- [No.5 - 纯 CSS 制作绕中轴旋转的立方体](https://fog3211.github.io/ife_2018/Css-Animation/No5.html)  
+- [No.6 - 利用 CSS animation 制作一个炫酷的 Slider](https://fog3211.github.io/ife_2018/Css-Animation/No6/No6.html)  
+- [No.7 - 使用 animate.css 实现一个优雅的登录框](https://fog3211.github.io/ife_2018/Css-Animation/No7/No7.html) 
+- [No.8 - 把 AE 动画转换成 Web 原生动画](https://fog3211.github.io/ife_2018/Css-Animation/No8/No8.html) 
+
+
+   
