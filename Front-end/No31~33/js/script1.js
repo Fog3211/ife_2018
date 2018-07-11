@@ -2,15 +2,9 @@ var select = document.getElementById("region-select");
 var wrapper = document.getElementById("table-wrapper");
 var list = ["商品", "地区", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
  select.onchange = function() {
-    var data=getData();
     wrapper.innerHTML='';
-    createTable(data);
+    createTable();
 }
-
-function getData() {
-    return select.value;
-}
-
 function createTable() {
 
     var table = document.createElement("table");
