@@ -8,6 +8,7 @@
         let wrapper = document.querySelector("#svg-wrapper");
         wrapper.innerHTML = "";
         let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("id", "svg");
         svg.setAttribute("width", "600");
         svg.setAttribute("height", "400");
         let newData = [];
@@ -50,9 +51,8 @@
         y.setAttribute("y2", "40");
         y.style = "stroke:#000; stroke-width:1";
         svg.appendChild(y);
-        console.log(y)
 
-        wrapper.appendChild(svg);
+       
 
         // y轴标识
         for (let i = 1; i <= 3; i++) {
@@ -67,11 +67,11 @@
 
             let y_info_line = document.createElementNS("http://www.w3.org/2000/svg", "line");
             y_info_line.setAttribute("x1", "40");
-            y_info_line.setAttribute("y1", 100*(4-i));
+            y_info_line.setAttribute("y1", 100 * (4 - i));
             y_info_line.setAttribute("x2", "580");
-            y_info_line.setAttribute("y2",  100*(4-i));
+            y_info_line.setAttribute("y2", 100 * (4 - i));
             y_info_line.style = "stroke:#EA5D89; stroke-width:2;opacity:0.3;";
-            
+
             svg.appendChild(y_info_line);
 
         }
@@ -102,5 +102,9 @@
             svg.appendChild(x_info);
 
         }
+
+
+
+        wrapper.appendChild(svg);
     }
     createBar(data);
