@@ -46,7 +46,7 @@ function createCheckBox(checkboxList, attribute) {
         }
         renderTable(getData());
     };
-    radioWrapper.childNodes[0].click();
+    radioWrapper.childNodes[3].click();
 }
 
 function getData() {

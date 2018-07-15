@@ -11,7 +11,9 @@ function chooseData() {
             // console.log(data);
             createBar(data);
             createLine(data);
+            chooseData();
         }
     }
 }
-chooseData();
+setInterval("chooseData()",100);
+// chooseData();
