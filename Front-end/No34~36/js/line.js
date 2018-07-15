@@ -1,9 +1,8 @@
-let data_line = [30, 35, 50, 70, 20, 15, 30, 50, 710, 130, 20, 20];
-
 function createLine(data) {
-
     let canvas = document.getElementById("canvas");
+    let wrapper=document.getElementById("canvas-wrapper");
     wrapper.innerHTML = "";
+    canvas.height=canvas.height;//清空画布
     // 绘制横轴及纵轴
     let ctx = canvas.getContext("2d");
     ctx.beginPath();
@@ -24,7 +23,7 @@ function createLine(data) {
                 return item / 2;
             });
             dealData(newData);
-        } else if (maxData < 180) {
+        } else if (maxData < 170) {
             newData = data.map((item) => {
                 return item * 2;
             });
@@ -34,7 +33,6 @@ function createLine(data) {
         }
     }
     dealData(data);
-
     // y轴标识
     for (let i = 1; i <= 3; i++) {
 
@@ -42,7 +40,7 @@ function createLine(data) {
         y_info_line.beginPath();
         y_info_line.moveTo(40, i * 100);
         y_info_line.lineTo(550, i * 100);
-        y_info_line.strokeStyle = "RGB(16,31,218,0.5)";
+        y_info_line.strokeStyle = "rgba(16,31,218,0.5)";
         y_info_line.stroke();
 
 
@@ -66,21 +64,22 @@ function createLine(data) {
     }
 
     // 定义好每一个数据点的直径， 颜色， 线的颜色， 宽度
+    for (var i = 0; i < newData.length; i++) {
+        var circle = canvas.getContext("2d");
+        circle.beginPath();
+        circle.arc(60 + 43 * i, 380 - newData[i], 2, 0, 2 * Math.PI);
+        circle.fill();
+        circle.stroke();
+    }
     // 定义好没两个数据点之间的横向间隔距离
 
+    var line = canvas.getContext("2d");
+    line.beginPath();
+    for (var i = 0; i < newData.length; i++) {
+        line.lineTo(60 + 43 * i, 380 - newData[i]);
+    }
 
-
-    // 遍历数据 {
-    //     计算将要绘制数据点的坐标
-    //     绘制数据点
-    //     if 不是第一个点 {
-    //         绘制这个数据点和上一个数据点的连线
-    //     }
-    //     记录下当前数据点的数据用于下一个点时绘制连线
-    // }
-
-
-
+    line.lineWidth = 2;
+    line.stroke();
     wrapper.appendChild(canvas);
 }
-createLine(data_line);

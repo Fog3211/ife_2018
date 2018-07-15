@@ -1,6 +1,4 @@
-    let data = [120, 100, 140, 160, 180, 185, 190, 210, 230, 245, 255, 270];
-
-    function createBar(data) {
+      function createBar(data) {
 
         // 定义好每一个柱子的宽度及柱子的间隔宽度
         // 定义好柱子颜色， 轴的颜色
@@ -85,7 +83,7 @@
         for (let i = 0; i < newData.length; i++) {
             let rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
 
-            rect.setAttribute("x", 55 + 43 * i);
+            rect.setAttribute("x", 55 + 44 * i);
             rect.setAttribute("y", 380 - newData[i]);
             rect.setAttribute("width", "20");
             rect.setAttribute("height", newData[i]);
@@ -107,4 +105,3 @@
 
         wrapper.appendChild(svg);
     }
-    createBar(data);
