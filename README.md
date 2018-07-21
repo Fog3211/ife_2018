@@ -23,12 +23,13 @@
 - [第三十一到第三十三天：我是精明的小卖家（一）](https://fog3211.github.io/ife_2018/Front-end/No31~33/test2.html)  
 - [第三十四天到第三十六天：我是精明的小卖家（二）](https://fog3211.github.io/ife_2018/Front-end/No34~36/index.html)  
 - [第三十七天到第三十八天：我是精明的小卖家（三）](https://fog3211.github.io/ife_2018/Front-end/No37~38/index.html)  
-- [第三十七天到第三十八天：我是精明的小卖家（四）](https://fog3211.github.io/ife_2018/Front-end/No39~41/index.html)  
+- [第三十九天到第四十一天：我是精明的小卖家（四）](https://fog3211.github.io/ife_2018/Front-end/No39~41/index.html)  
 - [第四十二天到第四十三天：开一家餐厅吧（一）](https://fog3211.github.io/ife_2018/Front-end/No42~43/index.html)  
 
 
 <h3>MVVM</h3>  
 
+- [1.1 课程系列引导及准备工作](https://github.com/fog3211/ife_2018)  
 
 <h3>CSS-Animation</h3>  
 
