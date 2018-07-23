@@ -31,7 +31,7 @@
 <h3>MVVM</h3>  
 
 - [1.1 课程系列引导及准备工作](https://github.com/fog3211/ife_2018)  
-- [1.2 用webpack4 / parcel快速搭建开发san helloworld](https://github.com/fog3211/ife_2018/MVVM/1.2/dist/index.html)  
+- [1.2 用webpack4 / parcel快速搭建开发san helloworld](https://fog3211.github.io/fog3211/ife_2018/MVVM/1.2/dist/index.html)  
 
 <h3>CSS-Animation</h3>  
 
